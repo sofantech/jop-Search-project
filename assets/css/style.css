@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+:root
+{
+    --main-color:#faf3f8;
+    --second-color:#26AE61;
+    --text-color:#1c2733;
+    --stat-color:#ffb847;
+
+}
+body
+{
+    overflow-x: hidden;
+    background: var(--main-color);
+    height: 100vh;
+    font-family: 'Cairo', sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+button
+{
+    color: #fff;
+}
+a:hover,
+a.active
+{
+    color: var(--second-color);
+
+}
+
+/* html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+    
+
+}
+body
+{
+    overflow-x: hidden;
+    background: var(--main-color);
+    height: 100vh;
+    font-family: 'Cairo', sans-serif;
+}
+ul
+{
+    list-style: none;
+}
+i,a,span
+{
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+a
+{
+    text-decoration: none;
+    color: var(--text-color);
+} */
+
+/* start header */
+/* start top header */
+.top-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.regesteration
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.regesteration a
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.regesteration a:hover
+{
+    color: var(--second-color);
+}
+.nav-item
+{
+    overflow: hidden;
+}
+.navbar
+{
+    background: #fff;
+    
+}
+.navbar-custom
+{
+    justify-content: space-between;
+}
+.nav-link
+{
+    color: var(--text-color);
+    position: relative;
+    
+
+}
+.nav-link::before
+{
+    content: "";
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 80%;
+    height: 5px;
+    transition:all 0.5s;
+    background: var(--second-color);
+    border-radius: 5px;
+
+}
+.nav-link:hover::before
+{
+    left: 20%;
+}
+.nav-link:hover
+{
+    color: var(--second-color);
+}
+.navbar-btn
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+.work-search-btn
+{
+    background: var(--second-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+.company-btn
+{
+    background: var(--stat-color);
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+/* end top header */
+/* end header */
+/*start slider*/
+.slide-cont
+{
+    background: white;
+    overflow: hidden;
+    
+
+}
+.slide-cont .slide
+{
+    max-height: 75vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.carousel-inner
+{
+    height: 100%;
+}
+.carousel-item 
+{
+    height: 100%;
+}
+.carousel-caption
+{
+    background: var(--stat-color);
+    border-radius: 50px;
+    bottom: 36%;
+}
+.carousel-caption h5
+{
+    /* font-size: 3.5rem; */
+
+}
+.carousel-caption p
+{
+    /* font-size: 2rem; */
+
+}
+.carousel-indicators [data-bs-target]
+{
+    background-color: var(--second-color);
+    height: 5px;
+}
+/*end slider*/
+/* start adds section */
+.banner-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner-container .banner
+{
+    background: linear-gradient(-55deg, #ff7675 29%,#d63031 29.1%,#d63031 68%,#ff7675 68.1%);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.5rem 1rem #0005;
+    overflow: hidden;
+
+}
+.banner-container .banner .shoe
+{
+    flex: 1 1 25rem;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+.banner-container .banner .shoe img
+{
+    width: 80%;
+}
+.banner-container .banner .content
+{
+    flex: 1 1 25rem;text-align: center;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase; 
+}
+.banner-container .banner .content span
+{
+    color: #eee;
+    font-size: 2.5rem;
+
+}
+.banner-container .banner .content span
+{
+    color: #fff;
+    font-size: 4rem;
+    
+}
+.banner-container .banner .content p
+{
+    color: #eee;
+    font-size: 2rem;
+    padding: 1rem 0;
+    
+}
+.banner-container .banner .content .btn
+{
+    display: block;
+    height: 4rem;
+    width: 15rem;
+    line-height: 4rem;
+    background: #fff;
+    color: #d63031;
+    margin: 0.5rem auto;
+    text-decoration: none;
+    
+}
+.banner-container .banner .man
+{
+    position: relative;
+    bottom: -3.3rem;
+    padding: 1rem;
+    flex: 1 1 2.5rem;
+}
+.banner-container .banner .man img
+{
+    width: 100%;
+
+}
+/* end adds section */
+/*start available-jobs*/
+.jobs-card .company
+{
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.jobs-card .company button
+{
+    background: #eee;
+}
+/*end available-jobs*/
+/*start our-partners*/
+.our-partners
+{
+    overflow-x: hidden;
+}
+/*end our-partners*/
+/*start footer*/
+.footer
+{
+    background: var(--text-color);
+}
+.footer h2
+{
+    color: #fff;
+    font-size: 20px;
+}
+.footer p
+{
+    color: #bbb;
+    font-size: 17px;
+}
+.footer a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #bbb;
+}
+/*end footer*/
+/*star job breadcrump */
+.breadcrumb-item + .breadcrumb-item::before
+{
+    float: right;
+}
+/*end job breadcrump */
+
