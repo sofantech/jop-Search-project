@@ -31,6 +31,7 @@ a.active
 }
 
 
+
 /* html
 {
     font-size: 62.5%;
@@ -78,7 +79,7 @@ a
     align-items: center;
     column-gap: 1rem;
 }
-.regesteration a
+a
 {
     text-decoration: none;
     color: var(--text-color);
@@ -500,4 +501,177 @@ nav .profile-details .admin_name
 
 
 /*end dashboard*/
+/*start login section */
+.login-form
+{
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 740px;
+}
+.login-btn
+{
+    width: 100%;
+    background: var(--second-color);
+    border-radius: 50px;
+    color: #fff;
+}
+.login-btn:hover
+{
+    color: #fff;
+    background: #168b49
+}
+.social-media-link
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media-link .facebook,
+.social-media-link .twitter,
+.social-media-link .google
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+.social-media-link .facebook
+{
+    background: #4093d5;
+    
+
+}
+.social-media-link .twitter
+{
+    background: #00bcd4;
+
+}
+.social-media-link .google
+{
+    background: #f44336;
+
+}
+
+/*end login section */
+/* start signIn form*/
+.signIn-nav
+{
+    max-width: 740px;
+    margin: 10px auto 0px;
+    background: #fff;
+    padding: 10px 0;
+
+}
+.signIn-nav .regester
+{
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 25px;
+    
+
+}
+.regester.active
+{
+    background: var(--second-color);
+    color: #fff;
+    
+
+
+}
+
+/* end signIn form*/
+/*start cv section */
+.personal-cv
+{
+    /* height: 1150px;
+    width: 800px; */
+    background: #fff;
+    box-shadow: 5px 7px 15px 5px #b9b6b6;
+    margin: 20px auto;
+
+}
+.personal-cv .top-section
+{
+    width: 100%;
+    background: #151b29;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+}
+.personal-cv .top-section img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.personal-cv p,
+.personal-cv span
+{
+    font-size: 14px;
+    margin: 0;
+}
+.personal-cv .clear-fix
+{
+    
+
+}
+.personal-cv .user-name
+{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+}
+.personal-cv .major
+{
+    font-size: 20px;
+    color: #eee;
+}
+.personal-cv .contact-info
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.personal-cv .contact-info .phone-num,
+.personal-cv .contact-info .email-add,
+.personal-cv .contact-info .country-address
+{
+    column-gap: 5px;
+    font-size: 17px;
+
+}
+.personal-cv .left,
+.personal-cv .right
+{
+    position: relative;
+    padding-top: 25px;
+
+}
+.personal-cv .left::before
+{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    left: 0;
+    top: 10px;
+    background: var(--text-color);
+
+}
+.personal-cv .cv-download-btn
+{
+    width: 100%;
+    margin: 10px auto;
+    background: var(--stat-color);
+    color: #fff;
+}
+
+/*end cv section */
 
