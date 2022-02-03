@@ -29,6 +29,11 @@ a.active
     color: var(--second-color);
 
 }
+.site-header
+{
+    background: #fff;
+    margin-bottom: 50px;
+}
 
 
 
@@ -79,6 +84,17 @@ a
     align-items: center;
     column-gap: 1rem;
 }
+.top-header .profile
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
 a
 {
     text-decoration: none;
@@ -122,7 +138,8 @@ a
     border-radius: 5px;
 
 }
-.nav-link:hover::before
+.nav-link:hover::before,
+.nav-link.active::before
 {
     left: 20%;
 }
@@ -167,7 +184,7 @@ a
 {
     max-height: 75vh;
     overflow: hidden;
-    border-radius: 20px;
+    background: #ccc;
 }
 .carousel-inner
 {
@@ -200,6 +217,17 @@ a
 }
 /*end slider*/
 /* start adds section */
+.ads
+{
+    border: 0.5px solid var(--second-color);
+    background-color: #fff;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 45px;
+    padding-left: 120px;
+    margin-top: 5px;
+    position: relative;
+}
 .banner-container
 {
     display: flex;
@@ -293,6 +321,10 @@ a
 {
     background: #eee;
 }
+.job-img
+{
+    max-width: 100px;
+}
 .download-btn-pdf
 {
     background: var(--second-color);
@@ -307,6 +339,58 @@ a
 {
     background: var(--second-color);
     color: #fff;
+}
+.form-check
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-check-input:checked
+{
+    background: var(--second-color);
+    border-color: var(--stat-color);
+}
+.accordion-button::after
+{
+    margin-left: 0;
+}
+.accordion-item:last-of-type .accordion-button.collapsed
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-item:first-of-type .accordion-button
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-button:not(.collapsed)
+{
+    background: #26ae612f;
+    color: #222;
+}
+.accordion-button:not(.collapsed)::after
+{
+    color: #222;
+    
+}
+.accordion-button:focus
+{
+    box-shadow: none;
+}
+.accordion-button:focus
+{
+    border-color: #ffb84767;
+}
+.compant-img
+{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 /*end available-jobs*/
 /*start our-partners*/
@@ -335,6 +419,51 @@ a
     text-decoration: none;
     font-size: 14px;
     color: #bbb;
+}
+.footer-social-media
+{
+    margin-top: 15px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-social-media .facebook,
+.footer-social-media .twitter,
+.footer-social-media .linkedin,
+.footer-social-media .whatsapp
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+.footer-social-media .facebook
+{
+    background: #4093d5;
+}
+.footer-social-media .twitter
+{
+    background: #d63031;
+}
+.footer-social-media i
+{
+    font-size: 22px;
+}
+.footer-social-media .linkedin
+{
+    background: #222;
+    color: #fff;
+}
+.footer-social-media .whatsapp
+{
+    background: #26AE61;
 }
 /*end footer*/
 /*star job breadcrump */
@@ -378,9 +507,29 @@ aside
     margin-top: 10px;
     padding: 0;
 }
+
 nav .profile-details
 {
-    justify-content: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+.profile-details img
+{
+    cursor: pointer;
+}
+.profile-details .pen-icon
+{
+    position: absolute;
+    top: -4px;
+    right: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+
+}
+#in-file
+{
+    display: none;
 }
 .nav-links li
 {
@@ -521,15 +670,15 @@ nav .profile-details .admin_name
     color: #fff;
     background: #168b49
 }
-.social-media-link
+.social-media-links
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.social-media-link .facebook,
-.social-media-link .twitter,
-.social-media-link .google
+.social-media-links .facebookbt,
+.social-media-links .twitterbt,
+.social-media-links .googlebt
 {
     display: inline-flex;
     justify-content: space-between;
@@ -539,18 +688,18 @@ nav .profile-details .admin_name
     font-size: 18px;
     padding: 5px 15px;
 }
-.social-media-link .facebook
+.social-media-links .facebookbt
 {
     background: #4093d5;
     
 
 }
-.social-media-link .twitter
+.social-media-links .twitterbt
 {
     background: #00bcd4;
 
 }
-.social-media-link .google
+.social-media-links .googlebt
 {
     background: #f44336;
 
@@ -674,4 +823,38 @@ nav .profile-details .admin_name
 }
 
 /*end cv section */
+/*start about us*/
+.facebook,
+.twitter,
+.linkedIn,
+.instagram
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    
+    color: #fff;
+    font-size: 25px;
+}
+.social-media .facebook
+{
+    background: #2196f3;
+
+}
+.social-media .twitter
+{
+    background: var(--stat-color);
+
+}
+.social-media .linkedIn
+{
+    background: #009688;
+}
+.social-media .instagram
+{
+    background: #e91e63;
+}
+/*end about us*/
 

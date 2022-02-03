@@ -7,7 +7,7 @@
     <meta name="author" content="hadi ahmed">
     <meta name="description" content="jobs-site">
     <meta name="keywoard" content="html , css , js,bootstrap,jquery">
-    <title>details</title>
+    <title>اتصل بنا</title>
     <link rel="stylesheet" href="assets/fonts/remixicon.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -44,7 +44,7 @@
     </div>
     <!--end top breadcrumb header-->
 
-    <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid container">
           <a class="navbar-brand" href="#">عروش صنعاء</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">الرئيسة</a>
+                <a class="nav-link " aria-current="page" href="index.html">الرئيسة</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="jobs.html">كل الوظائف</a>
@@ -65,7 +65,7 @@
                 <a class="nav-link" href="aboutus.html">من نحن</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactus.html">اتصل بنا</a>
+                <a class="nav-link active" href="contactus.html">اتصل بنا</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="personalCv.html">الملف الشخصي</a>
@@ -84,166 +84,94 @@
 
     <!-- start job details-->
     <section class="job-details container">
-        <div class="row">
-          <div class="col-12">
-            <div class="card mb-3 mt-5 p-3" style="max-width: 100%;">
-              <div class="row g-0">
-                <div class="col-md-2">
-                  <img src="assets/images/portfolio-4.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body">
-                      <h3 class="card-title">مندوبين مبيعات</h3>
-                      <div class="company d-flex">
-                          <i class="ri-bank-fill"></i>
-                          <h5 class="company-name">اسم الشركة هنا</h5>
-                      </div>
-                      <div class="company d-flex">
-                              <i class="ri-map-pin-fill"></i>
-                              <span class="company-location"> عدن الشيخ عثمان</span>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-3 d-flex justify-content-between align-items-center">
-                    <button class="btn btn-outline w-45 download-btn-pdf job-applay-btn ">تقديم</button>
-                    <button class="btn btn-outline-danger w-45 download-btn-doc"> إبلاغ</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row section-header text-center p-4">
             <div class="col-12">
-                <h2> تفاصيل الوظيفة</h2>
+                <h2> اتصل بنا</h2>
                 <nav aria-label="breadcrumb ">
                   <ol class="breadcrumb text-center justify-content-center">
                     <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-                    <li class="breadcrumb-item" aria-current="page"><a href="jobs.html">كل الوظائف</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a class="active" href="#">تفاصيل الوظيفة</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a class="active" href="#">اتصل بنا </a></li>
                   </ol>
                 </nav>
             </div>
         </div>
-        <div class="row text-center justify-content-around">
+        <div class="row  justify-content-around">
           <div class="col-sm-12 col-md-6 w-80">
            <div class="row">
-              <div class="card text-end" style="width: 80%;">
-                <div class="card-body">
-                  <h5 class="card-title">الوصف</h5>
-                  <p class="card-text">مندوب مبيعات يلتزم بتسسير حركة البيع وفق للسياسة المتبعة من قبل الشركة وعمل التصورات والتحليل وكل ما يلزم و الرف بتقارير يومية عن حركة البيع الى الادارة.</p>
-                  <a href="#" class="btn btn-primary job-applay-btn">التقديم للوظيفة</a>
-                </div>
+            <form class="login-form row container g-3 pb-4">
+              <h2 class="text-center">ارسل لنا رسالة</h2>
+              <div class="col-md-12">
+                <label for="userName" class="form-label"> اسم المستخدم  </label>
+                <input placeholder="اسم المستخدم" type="text" class="form-control" id="userName">
               </div>
+              <div class="col-md-12">
+                <label for="userEmail" class="form-label">البريد الالكتروني</label>
+                <input placeholder="البريد الالكتروني" type="email" class="form-control" id="userEmail">
+              </div>
+              <div class="col-md-12">
+                <label for="messagetitle" class="form-label">موضوع الرسالة</label>
+                <input placeholder="موضوع الرسالة" type="text" class="form-control" id="messagetitle">
+              </div>
+              <div class="col-md-12">
+                <label for="messageContent" class="form-label">الرسالة</label>
+                <textarea placeholder=" موضوع الرسالة" class="form-control" id="messageContent"></textarea>
+              </div>
+              <div class="col-md-4">
+                <button class="btn w-100  download-btn-pdf">ارسال</button>
+              </div>
+
+            </form>
            </div>
-           <div class="row">
-            <div class="card text-end" style="width: 80%;">
-              <div class="card-body">
-                <h5 class="card-title">متطلبات الوظيفة</h5>
-                <ol>
-                  <li>بكالوريوس هندسة مدنية</li>
-                  <li> خبرة لاتقل عن سنه في الاعمال المساحية </li>
-                  <li>اجادة استخدام البرامج الهندسية </li>
-                  <li> مستولى جيد في اللغة الانجليزية </li>
-                </ol>
-                <a href="#" class="btn btn-primary job-applay-btn">التقديم للوظيفة</a>
-              </div>
-            </div>
-         </div>
           </div>
           <div class="col-sm-12 col-md-6">
-            <div class="row mb-4 mt-4">
-              <div class="card pb-4">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4 class="card-title">تفاصيل الوظيفة</h4>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-between pb-2 align-items-center">
-                    <div class="col-6">
-                      <h5 class="card-text">شركة التاج</h5>
-                    </div>
-                    <div class="col-6">
-                      <img src="assets/images/slide-1.jpg" class="card-text compant-img"></img>
-                    </div>
-                  </div>
-                  <div class="row pb-2">
-                    <div class="col-6">
-                      <h5 class="card-text">المسمى الوظيفي</h5>
-                    </div>
-                    <div class="col-6">
-                      <p class="card-text">مهندس مدني </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <h5 class="card-text">الدوام</h5>
-                    </div>
-                    <div class="col-6">
-                      <p class="card-title">دوام كامل</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <h5 class="card-text">القسم</h5>
-                    </div>
-                    <div class="col-6">
-                      <p class="card-title">قسم المساحة</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <h5 class="card-text">الموقع</h5>
-                    </div>
-                    <div class="col-6">
-                      <p class="card-text">صنعاء</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="row">
-              <div class="card" style="">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4 class="card-title">مشاركة الوظيفة</h4>
+              <form class="login-form row container g-3 pb-4">
+                <h2 class="text-center">معلومات التواصل</h2>
+                <div class="row align-items-center mt-4">
+                  <div class="col-4">
+                    <div class="icon text-center">
+                      <i class="ri-cellphone-fill fs-4"></i>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-4">
-                      <button class="card-title btn btn-light ri-facebook-circle-fill"></button>
-                    </div>
-                    <div class="col-4">
-                      <button class="card-title btn btn-light ri-twitter-fill"> </button>
-                    </div>
-                    <div class="col-4">
-                      <button class="card-title btn btn-light ri-facebook-circle-fill"> </button>
+                  <div class="col-8">
+                    <div class="phone-num">
+                      <h5>رقم الهاتف</h5>
+                      <span>967-777-604-785</span>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="row mt-3 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h4 class="card-title">تحميل تفاصيل الوظيفة</h4>
+                <div class="row align-items-center mt-4">
+                  <div class="col-4">
+                    <div class="icon text-center">
+                      <i class="ri-mail-fill fs-4"></i>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <button class="card-title btn text-light btn-warning download-btn-doc ri-facebook-circle-fill">تحميل ك (pdf)</button>
-                    </div>
-                    <div class="col-6">
-                      <button class="card-title btn text-light btn-success download-btn-pdf ri-twitter-fill"> تحميل ك (doc)</button>
+                  <div class="col-8">
+                    <div class="phone-num">
+                      <h5>البريد الالكتروني</h5>
+                      <span>2354sofanTec@gmail.com</span>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            
+                <div class="row align-items-center mt-4">
+                  <div class="col-4">
+                    <div class="icon text-center">
+                      <i class="ri-map-pin-5-fill fs-4"></i>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="phone-num">
+                      <h5>الموقع</h5>
+                      <span>اليمن - صنعاء - الحصبة</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7693.245496179234!2d44.18431689347331!3d15.396904231639816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2s!4v1643813148443!5m2!1sar!2s" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+  
+              </form>
+             </div>
           </div>
         </div>
       </div>
